@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
   text-decoration: none;
+  list-style: none;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,6 +19,12 @@
 
   --color-white: #fff;
   --color-black:#000;
+
+  
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Classes Gerais */
@@ -116,7 +124,41 @@ header {
 }
 
 /* Inicio Main */
+.main-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
+  padding-top: 4rem;
+}
+
+.main-text h1 {
+  font-size: 8rem;
+  color: var(--color-orange);
+  line-height: 105%;
+  margin-bottom: 1rem;
+}
+
+.main-text p {
+  font-size: 3rem;
+  line-height: 105%;
+  margin-bottom: 3rem;
+  color: var(--color-text);
+}
+
+.main-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.main-icons ul li a i {
+  font-size: 4rem;
+  color: var(--color-orange);
+}
 
 
 
