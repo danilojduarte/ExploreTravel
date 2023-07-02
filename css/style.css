@@ -6,3 +6,63 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+
+  /* Classes Gerais */
+
+  body {
+    background-color: green;
+  }
+
+  .limit {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* Header Inicio */
+  header {
+    background-color: #333;
+    height: 60px;
+  }
+
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 8px 8px;
+    
+  }
+   
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Media Query for responsive design */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  }
