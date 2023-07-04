@@ -1,19 +1,17 @@
-var swiper = new Swiper(".swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 2,
-  speed: 600,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 3,
-    slideShadows: true,
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: false,
-  },
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const cardsContainer = document.querySelector('.cards-container');
+
+prevButton.addEventListener('click', () => {
+  cardsContainer.scrollBy({
+    left: -200,
+    behavior: 'smooth'
+  });
+});
+
+nextButton.addEventListener('click', () => {
+  cardsContainer.scrollBy({
+    left: 200,
+    behavior: 'smooth'
+  });
 });
