@@ -206,8 +206,6 @@ header {
   color: var(--color-text);
   text-align: center;
   padding-top: 1rem;
-
-  
 }
 
 .background {
@@ -249,7 +247,7 @@ header {
 .articles article h2 {
   margin: 0 0 18px 0;
   font-size: 2rem;
-  color: var(--color-secondary);
+  color: var(--color-orange);
   font-weight: bold;
   transition: color 0.3s ease-out;
 }
@@ -270,7 +268,7 @@ header {
   padding: 1rem;
   background: var(--text-color);
 
-  height: 10%;
+  height: 20%;
 
   display: flex;
   flex-direction: column;
@@ -279,7 +277,7 @@ header {
 
 .articles figure {
   width: 100%;
-  height: 350px;
+  height: 250px;
   overflow: hidden;
 }
 
