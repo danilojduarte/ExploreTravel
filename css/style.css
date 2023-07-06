@@ -236,6 +236,9 @@ header {
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   border-radius: 1.6rem;
+
+
+  background-color: var(--color-orange);
 }
 
 /* .articles article a {
@@ -247,7 +250,7 @@ header {
 .articles article h2 {
   margin: 0 0 18px 0;
   font-size: 2rem;
-  color: var(--color-orange);
+  color: var(--color-white);
   font-weight: bold;
   transition: color 0.3s ease-out;
 }
