@@ -194,6 +194,9 @@ header {
   cursor: pointer;
 }
 
+/* Inicio Conteudo Secundario */
+
+
 /* Inicio Section Cards */
 
 .cards-titulo h2 {
@@ -248,7 +251,7 @@ header {
 } */
 
 .articles article h2 {
-  margin: 0 0 18px 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
   color: var(--color-white);
   font-weight: bold;
@@ -259,6 +262,7 @@ header {
   color: var(--color-text-dark);
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .articles article img {
