@@ -16,6 +16,7 @@
 
   --color-orange: #fb8f1d;
   --color-text: #b8becd;
+  --color-green: rgb(4, 195, 4);
 
   --color-white: #fff;
   --color-black: #000;
@@ -195,7 +196,39 @@ header {
 }
 
 /* Inicio Conteudo Secundario */
+.conteudo-secundario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
+.button-conteudo {
+  padding: 16px 32px;
+  margin-left: 1rem;
+  margin-top: 4rem;
+
+  line-height: 1.25;
+  background-color: var(--color-orange) ;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-conteudo:hover {
+  background-color: transparent;
+  color: var(--color-green);
+  font-weight: bold;
+  border: none;
+}
 
 /* Inicio Section Cards */
 
