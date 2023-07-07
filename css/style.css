@@ -81,7 +81,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .menu a:hover {
-  color: var(--color-orange);
+  color: var(--color-green);
 }
 
 .button-1 {
@@ -190,7 +190,7 @@ header {
   border-radius: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-green);
 
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -198,8 +198,8 @@ header {
 
 /* Inicio Conteudo Secundario */
 .conteudo-secundario {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -208,9 +208,20 @@ header {
   padding-bottom: 8rem;
 }
 
+.conteudo-secundario h2 {
+  font-size: 3rem;
+  line-height: 105%;
+  margin-bottom: 2rem;
+}
+
+.conteudo-secundario p {
+  font-size: 2rem;
+  line-height: 100%;
+}
+
 .button-conteudo {
   padding: 16px 32px;
-  margin-left: 1rem;
+  
   margin-top: 4rem;
 
   line-height: 1.25;
