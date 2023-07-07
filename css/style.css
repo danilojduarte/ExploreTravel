@@ -140,6 +140,7 @@ header {
   gap: 2rem;
 
   padding-top: 4rem;
+  
 }
 
 .main-text h1 {
@@ -203,7 +204,8 @@ header {
   align-items: center;
   gap: 2rem;
 
-  margin-bottom: 38rem;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
 }
 
 .button-conteudo {
@@ -233,6 +235,10 @@ header {
 }
 
 /* Inicio Section Cards */
+
+section .cards-titulo {
+  padding-top: 10rem;
+}
 
 .cards-titulo h2 {
   text-align: center;
