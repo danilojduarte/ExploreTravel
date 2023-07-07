@@ -15,8 +15,11 @@
   font-size: 62.5%;
 
   --color-orange: #fb8f1d;
+  --color-orange-suave: #f9e0c6;
+
   --color-text: #b8becd;
-  --color-green: rgb(4, 195, 4);
+  --color-green: #04c304;
+  
 
   --color-white: #fff;
   --color-black: #000;
@@ -186,14 +189,21 @@ header {
   background: transparent;
   text-decoration: none;
   color: var(--color-orange);
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: bold;
   border-radius: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border: 1px solid var(--color-green);
 
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
   cursor: pointer;
+}
+
+.main-button:hover {
+  color: var(--color-green);
+  font-weight: bold;
+  border: none;
 }
 
 /* Inicio Conteudo Secundario */
@@ -217,6 +227,7 @@ header {
 .conteudo-secundario p {
   font-size: 2rem;
   line-height: 100%;
+  color: var(--color-text);
 }
 
 .button-conteudo {
@@ -284,7 +295,7 @@ section .cards-titulo {
 .articles article {
   max-width: 28rem;
 
-  height: 40rem;
+  height: 36rem;
   cursor: pointer;
   position: relative;
   display: block;
@@ -293,7 +304,7 @@ section .cards-titulo {
   border-radius: 1.6rem;
 
 
-  background-color: var(--color-orange);
+  background-color: var(--color-orange-suave);
 }
 
 /* .articles article a {
@@ -303,15 +314,15 @@ section .cards-titulo {
 } */
 
 .articles article h2 {
-  margin: 0 0 1rem 0;
+  /* margin: 0 0 1rem 0; */
   font-size: 2rem;
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: bold;
   transition: color 0.3s ease-out;
 }
 
 .articles article p {
-  color: var(--color-text-dark);
+  color: var(--color-orange);
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: bold;
@@ -327,7 +338,7 @@ section .cards-titulo {
   padding: 1rem;
   background: var(--text-color);
 
-  height: 20%;
+  height: 50%;
 
   display: flex;
   flex-direction: column;
@@ -336,7 +347,7 @@ section .cards-titulo {
 
 .articles figure {
   width: 100%;
-  height: 250px;
+  height: 240px;
   overflow: hidden;
 }
 
