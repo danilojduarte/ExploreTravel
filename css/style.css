@@ -562,6 +562,17 @@ section .section-testimonials {
 
 /* Fim Section Testimonials */
 
+
+/* Inicio Footer */
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16rem;
+  height: 20rem;
+}
+
 /* Media Query for responsive design */
 @media (max-width: 768px) {
   .menu {
