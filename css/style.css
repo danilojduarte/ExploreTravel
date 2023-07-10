@@ -41,11 +41,11 @@ img {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--color-orange);
   line-height: 100%;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /* Header Inicio */
