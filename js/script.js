@@ -15,3 +15,9 @@ nextButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+$(".option").click(function(){
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+  
+});
