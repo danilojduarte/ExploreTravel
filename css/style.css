@@ -364,6 +364,60 @@ section .cards-titulo {
 
 /* Fim Section Cards */
 
+/* Section Testimonials */
+
+.section-testimonials h2 {
+  text-align: left;
+}
+
+.testimonials-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonials-text {
+  width: 50%;
+}
+
+.testimonials-icons {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.testimonials-icons i {
+  font-size: 2rem;
+
+  color: var(--color-orange);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-text p {
+  font-size: 2rem;
+  color: var(--color-text);
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.testimonials-text h4 {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+.testimonials-text span {
+  font-size: 1rem;
+}
+
+.testimonials-img img {
+  border-radius: 2rem;
+}
+
+/* Fim Section Testimonials */
+
+
+
 /* Media Query for responsive design */
 @media (max-width: 768px) {
   .menu {
