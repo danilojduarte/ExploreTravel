@@ -371,7 +371,9 @@ section .cards-titulo {
 
 
 /* Section Trending Stories */
-
+.trending-stories {
+  padding: 12rem 0 12rem 0;
+}
 .cards {
   width: 100%;
   display: flex;
@@ -585,9 +587,50 @@ section .section-testimonials {
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 16rem;
+  margin-top: 20rem;
   height: 20rem;
 }
+
+.col-1 {
+  width: 30%;
+}
+
+.col-1 img {
+  margin-bottom: 2rem;
+}
+
+.col-1 p {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.col-1 span {
+  font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query for responsive design */
 @media (max-width: 768px) {
