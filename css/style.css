@@ -160,7 +160,7 @@ header {
 
 .main-text p {
   font-size: 3rem;
-  line-height: 105%;
+  line-height: 4rem;
   margin-bottom: 3rem;
   color: var(--color-text);
 }
@@ -231,7 +231,7 @@ header {
 
 .conteudo-secundario p {
   font-size: 2rem;
-  line-height: 100%;
+  line-height: 4rem;
   color: var(--color-text);
 }
 
@@ -274,6 +274,7 @@ section .cards-titulo {
 
 .cards-titulo p {
   font-size: 2rem;
+  line-height: 3rem;
   color: var(--color-text);
   text-align: center;
   padding-top: 1rem;
@@ -607,7 +608,8 @@ section .section-testimonials {
 }
 
 .col-1 span {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: var(--color-orange);
 }
 
 .col-2 {
