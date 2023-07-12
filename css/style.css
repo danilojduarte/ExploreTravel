@@ -618,6 +618,8 @@ section .section-testimonials {
 
 .col-2 h4 {
   font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--color-orange);
   line-height: 6rem;
   cursor: pointer;
 
@@ -625,12 +627,15 @@ section .section-testimonials {
 }
 
 .col-2 h4:hover {
-  color: var(--color-orange);
+  color: var(--color-green);
 }
 
 .col-2 ul li {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  font-weight: bold;
   padding-bottom: 1rem;
+  text-transform: uppercase;
 
   cursor: pointer;
 
@@ -639,6 +644,32 @@ section .section-testimonials {
 
 .col-2 ul li:hover {
   color: var(--color-orange);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--color-text);
+
+  justify-content: center;
+  gap: 2rem;
+  height: 8rem;
+
+  align-items: center;
+
+  transition: all .3s ease-in-out;
+}
+
+.footer-links a i {
+  font-size: 2.4rem;
+  color: var(--color-orange);
+}
+
+.footer-links a:hover,
+.footer-links a i:hover {
+  color: var(--color-green);
+  transform: scale(1.4);
+  transition: all 0.5s;
 }
 
 
