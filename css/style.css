@@ -680,9 +680,24 @@ section .section-testimonials {
 
 /* Responsividade */
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 780px) {
   .main-home {
-    display: flex;
-    flex-direction: column;
+   background-color: blue;
+  }
+  .limit {
+    padding: 2rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .main-home {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .main-home {
+    background-color: red;
   }
 }
