@@ -19,7 +19,7 @@
   font-size: 62.5%;
 
   --color-orange: #fb8f1d;
-  --color-orange-suave: #f9e0c6;
+  --color-orange-suave: #fbf3eadd;
 
   --color-text: #9d9ea1;
   --color-green: #04c304;
@@ -678,31 +678,11 @@ section .section-testimonials {
 
 
 
+/* Responsividade */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Query for responsive design */
-@media (max-width: 768px) {
-  .menu {
+@media screen and (min-width: 400px) {
+  .main-home {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin: 10px 0;
   }
 }
