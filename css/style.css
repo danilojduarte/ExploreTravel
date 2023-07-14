@@ -91,7 +91,7 @@ header {
 }
 
 .button-1 {
-  padding: 16px 32px;
+  padding: 15px 40px;
   box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
   line-height: 1.25;
   background: transparent;
@@ -101,7 +101,7 @@ header {
   border-radius: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 1px solid var(--color-orange);
+  border: none;
 
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -680,7 +680,7 @@ section .section-testimonials {
 
 /* Responsividade */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
   .main-home {
    background-color: blue;
   }
@@ -692,6 +692,10 @@ section .section-testimonials {
 
 @media screen and (max-width: 600px) { 
   .main-home {
+    display: flex;
+    flex-direction: column;
+
+
     background-color: red;
   }
 }
