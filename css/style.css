@@ -58,26 +58,32 @@ header {
   height: 7.5rem;
 }
 
-i#burguer {
+.menu-btn i{
   color: var(--color-orange);
   font-size: 3rem;
-  display: block;
+  
   text-align: center;
   padding: 10px;
+
+  display: block;
 
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 
-i#burguer:hover {
+.menu-btn i:hover {
   color: var(--color-green);
 }
 
 .header-nav {
   display: flex;
+  height: 8rem;
+  width: 100%;
+  
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 
   padding: 1rem;
 }
@@ -96,9 +102,10 @@ i#burguer:hover {
 .menu a {
   color: var(--color-text);
   text-decoration: none;
-
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -700,20 +707,24 @@ section .section-testimonials {
 
 /* Responsividade */
 
-@media screen and (max-width: 830px) {
-  header nav .header-nav {
+@media (max-width: 920px) {
+  nav .menu-btn i  {
     display: block;
-    height: 50vh;
-
-    margin-bottom: 10rem;
   }
-
-  .header-nav {
-    position: block;
-    display: flex;
-    flex-direction: column;
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100vh;
+    background-color: var(--color-orange);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all .3s ease-in-out;
   }
+}
 
+@media screen and (max-width: 830px) {
   .main-home {
     
     background-color: blue;
