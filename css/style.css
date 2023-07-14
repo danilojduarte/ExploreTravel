@@ -701,3 +701,9 @@ section .section-testimonials {
     background-color: red;
   }
 }
+
+@media screen and (max-width: 400px) { 
+  .main-home {
+    background-color: pink;
+  }
+}
