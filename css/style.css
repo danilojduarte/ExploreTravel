@@ -743,6 +743,21 @@ section .section-testimonials {
   .main-home {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-home .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 4rem;
+  }
+  .main-home .main-img {
+    margin: auto;
+    padding-top: 4rem;
   }
 
   .limit {
