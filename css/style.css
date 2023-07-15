@@ -751,6 +751,7 @@ section .section-testimonials {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;    
     gap: 2rem;
 
     padding-top: 4rem;
@@ -758,6 +759,20 @@ section .section-testimonials {
   .main-home .main-img {
     margin: auto;
     padding-top: 4rem;
+  }
+  section .conteudo-secundario {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding-top: 4rem;
+  }
+  .conteudo-secundario .conteudo-secundario-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .limit {
