@@ -53,26 +53,11 @@ h2 {
 
 /* Header Inicio */
 header {
+  position: relative;
+  
   padding-top: 2rem;
   background-color: var(--color-white);
   height: 7.5rem;
-}
-
-.menu-btn i {
-  color: var(--color-orange);
-  font-size: 3rem;
-
-  text-align: center;
-  padding: 10px;
-
-  display: none;
-
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.menu-btn i:hover {
-  color: var(--color-green);
 }
 
 .header-nav {
@@ -161,6 +146,23 @@ header {
   border: none;
 
   box-shadow: none;
+}
+
+.menu-btn i {
+  color: var(--color-orange);
+  font-size: 3rem;
+
+  text-align: center;
+  padding: 10px;
+
+  display: none;
+
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.menu-btn i:hover {
+  color: var(--color-green);
 }
 
 /* Inicio Main */
@@ -710,32 +712,13 @@ section .section-testimonials {
 
 
 @media (max-width: 970px) {
+  header nav ul li a, button {
+    display: none;
+  }
+
+
   nav .menu-btn i {
     display: block;
-  }
-
-  nav ul {
-    position: fixed;
-    top: 80px;
-    left: -150vh;
-    background-color: var(--color-orange);
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all .3s ease-in-out;
-  }
-
-  nav button {
-    position: fixed;
-    top: 80px;
-    left: -150vh;
-    background-color: var(--color-orange);
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all .3s ease-in-out;
   }
 }
 
