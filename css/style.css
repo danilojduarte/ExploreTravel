@@ -73,18 +73,23 @@ header {
   padding: 1rem;
 }
 
-.menu {
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 10px;
 }
 
-.menu li {
+.menu-list li {
   margin: 0 2rem;
 }
 
-.menu a {
+.menu-list a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 2rem;
@@ -94,7 +99,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.menu a:hover {
+.menu-list a:hover {
   color: var(--color-green);
 }
 
@@ -161,8 +166,16 @@ header {
   transition: all .3s ease-in-out;
 }
 
+.open {
+  display: block;
+}
+
 .menu-btn i:hover {
   color: var(--color-green);
+}
+
+.mobile-menu {
+  display: none;
 }
 
 /* Inicio Main */
@@ -703,23 +716,36 @@ section .section-testimonials {
   transition: all 0.5s;
 }
 
-
-
-
-
 /* Responsividade */
 
 
-
 @media (max-width: 970px) {
+  .header-nav {
+    padding: 1.5rem 4rem;
+  }
+  .header-nav .menu-list {
+    display: none;
+  }
   header nav ul li a, button {
     display: none;
   }
-
-
   nav .menu-btn i {
     display: block;
   }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+  .
 }
 
 @media screen and (max-width: 830px) {
