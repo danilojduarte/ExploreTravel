@@ -1,0 +1,108 @@
+*Html
+
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Socials</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <span class="background">
+            <section class="gallery">
+                <article class="card">
+                    <figure>
+                        <img
+                            src="images/spring.jpg"
+                            alt="Preview"
+                            title="Preview"
+                        />
+                    </figure>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img
+                            src="images/summer.jpg"
+                            alt="Preview"
+                            title="Preview"
+                        />
+                    </figure>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img
+                            src="images/autumn.jpg"
+                            alt="Preview"
+                            title="Preview"
+                        />
+                    </figure>
+                </article>
+                <article class="card">
+                    <img
+                        src="images/winter.jpg"
+                        alt="Preview"
+                        title="Preview"
+                    />
+                </article>
+                
+                <!--? more picture here  -->
+                <!-- Pictures from Freepik -->
+            </section>            
+        </span>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+:root {
+    --background: #3C343D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.background {
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 16px;
+    height: 360px;
+    overflow: hidden;
+    background-color: var(--background);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.card img {
+    height: 360px;
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
