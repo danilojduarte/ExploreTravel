@@ -54,22 +54,21 @@ h2 {
 /* Header Inicio */
 header {
   position: relative;
-  
+
   padding-top: 2rem;
   background-color: var(--color-white);
   height: 7.5rem;
 }
 
-.header-nav {
+.nav-bar {
   display: flex;
-  height: 8rem;
-  width: 100%;
-
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
 
+  height: 8rem;
+  width: 100%;
   padding: 1rem;
 }
 
@@ -78,18 +77,25 @@ header {
   align-items: center;
 }
 
-.menu-list {
+.nav-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 10px;
 }
 
-.menu-list li {
-  margin: 0 2rem;
+.nav-item {
+  margin: 0 15px;
 }
 
-.menu-list a {
+.nav-link a {
+  text-decoration: none;
+  font-size: 8.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.nav-list a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 2rem;
@@ -99,7 +105,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-list a:hover {
+.nav-list a:hover {
   color: var(--color-green);
 }
 
@@ -720,30 +726,46 @@ section .section-testimonials {
 
 
 @media (max-width: 970px) {
-  .header-nav {
+  .nav-bar {
     padding: 1.5rem 4rem;
   }
-  .header-nav .menu-list {
+
+  .nav-item {
     display: none;
   }
-  header nav ul li a, button {
+
+  header nav ul li a,
+  button {
     display: none;
   }
-  nav .menu-btn i {
+
+  .menu-btn i {
     display: block;
   }
+
   .mobile-menu ul {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
   }
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
 
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
   }
 }
 
@@ -754,26 +776,30 @@ section .section-testimonials {
     align-items: center;
     justify-content: center;
   }
+
   .main-home .main-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
     gap: 2rem;
 
     padding-top: 4rem;
   }
+
   .main-home .main-img {
     margin: auto;
     padding-top: 4rem;
   }
+
   section .conteudo-secundario {
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
     padding-top: 4rem;
   }
+
   .conteudo-secundario .conteudo-secundario-texto {
     display: flex;
     flex-direction: column;
