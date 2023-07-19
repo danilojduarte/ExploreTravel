@@ -1,10 +1,9 @@
-function menuShow() {
-  let menuMobile = document.querySelector('.mobile-menu');
-  if (menuMobile.classList.contains('open')){
-    menuMobile.classList.remove('open');
-  } else {
-    menuMobile.classList.add('open')
-  }
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.nav-list');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('open');
 };
 
 
