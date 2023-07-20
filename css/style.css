@@ -530,8 +530,8 @@ section .cards-titulo {
 }
 
 .card:hover .card__img--hover {
-  height: 41%;
-  opacity: 0.3;
+  height: 100%;
+  opacity: .3;
 }
 
 .card:hover .card__info {
@@ -798,6 +798,22 @@ section .section-testimonials {
     width: 100%;
     text-align: justify;
   }
+  .card:hover .card__img--hover {
+    height: 41%;
+    opacity: 0.3;
+  }
+
+  .footer-conteudo h4 {
+    font-size: 1.5rem;
+  }
+
+  .footer-conteudo p {
+    font-size: 1rem;
+  }
+
+  .footer-conteudo .col-2 ul li {
+    font-size: 1rem;
+  }
 
   .limit {
     padding: 2rem;
@@ -806,21 +822,17 @@ section .section-testimonials {
 }
 
 @media screen and (max-width: 600px) {
-
-
-
   .main-home {
     display: flex;
     flex-direction: column;
-
-
-    background-color: red;
   }
+  /* .footer-conteudo {
+    display: flex;
+    flex-direction: column;
+  } */
 
 }
 
 @media screen and (max-width: 400px) {
-  .main-home {
-    background-color: pink;
-  }
+ 
 }
