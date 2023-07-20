@@ -309,7 +309,7 @@ section .cards-titulo {
   justify-content: center;
   max-width: 1200px;
   height: auto;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .articles article {
@@ -530,7 +530,7 @@ section .cards-titulo {
 }
 
 .card:hover .card__img--hover {
-  height: 100%;
+  height: 41%;
   opacity: 0.3;
 }
 
@@ -784,6 +784,19 @@ section .section-testimonials {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2rem;
+  }
+
+  .section-testimonials h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  }
+  .testimonials-conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .testimonials-text {
+    width: 100%;
+    text-align: justify;
   }
 
   .limit {
